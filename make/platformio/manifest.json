@@ -1,0 +1,64 @@
+{
+    "framework-pumbaa": [
+        {
+            "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/platformio/3.0.2.zip",
+            "sha1": "0b98dfce1d1197c00db6af0bd7b3e9c433982324",
+            "version": "3.0.2"
+        },
+        {
+            "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/platformio/3.0.1.zip",
+            "sha1": "c1b3ab21bfa9ccc5f5158344c23a57162626ee7d",
+            "version": "3.0.1"
+        },
+        {
+            "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/platformio/3.0.0.zip",
+            "sha1": "5b0cdb4a5e107b04c6cb8de423eb89cb10c1d8b0",
+            "version": "3.0.0"
+        },
+        {
+            "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/platformio/2.6.1.zip",
+            "sha1": "5b2f886a9fa54a8785b8c6a841f7d36a1173e947",
+            "version": "2.6.1"
+        },
+        {
+            "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/platformio/2.6.0.zip",
+            "sha1": "c07f2e7045616fb71191529d458f81c9ebd0fd25",
+            "version": "2.6.0"
+        },
+        {
+            "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/platformio/2.3.2.zip",
+            "sha1": "775011f391a14bf6b98f811e5cd81b95387fa742",
+            "version": "2.3.2"
+        },
+        {
+            "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/platformio/2.3.1.zip",
+            "sha1": "65f43c559f35b3f33703a23613b3ae372e20dc85",
+            "version": "2.3.1"
+        },
+        {
+            "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/platformio/2.3.0.zip",
+            "sha1": "da13fef2bd5e347485d273c7860a80ccd6bd6a80",
+            "version": "2.3.0"
+        },
+        {
+            "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/platformio/2.2.2.zip",
+            "sha1": "5af700c1306c669f07412311063c64d3ea7c7bb4",
+            "version": "2.2.2"
+        },
+        {
+            "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/platformio/2.2.1.zip",
+            "sha1": "b00e33814c57e7bf627683831663fe46d1a918a8",
+            "version": "2.2.1"
+        },
+        {
+            "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/platformio/2.2.0.zip",
+            "sha1": "66fb817f67923f2623f21d403f6cd9e83231c57e",
+            "version": "2.2.0"
+        },
+        {
+            "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/platformio/2.1.0.zip",
+            "sha1": "",
+            "version": "2.1.0"
+        }
+    ]
+}

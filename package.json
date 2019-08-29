@@ -1,0 +1,10 @@
+{
+  "name":"framework-pumbaa",
+  "description":"Pumbaa OS",
+  "url":"https://github.com/OS-Q/N17",
+  "version":"1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OS-Q/N17.git"
+  }
+}

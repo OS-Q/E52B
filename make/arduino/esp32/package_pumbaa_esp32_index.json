@@ -1,0 +1,410 @@
+{
+    "packages": [
+        {
+            "name": "Pumbaa",
+            "maintainer": "Erik Moqvist",
+            "websiteURL": "https://github.com/eerimoq/pumbaa",
+            "email": "erik.moqvist@gmail.com",
+            "help": {
+                "online": "https://pumbaa-os.readthedocs.org"
+            },
+            "platforms": [
+                {
+                    "name": "Pumbaa",
+                    "architecture": "esp32",
+                    "version": "2.0.0",
+                    "category": "Pumbaa",
+                    "help": {
+                        "online": "https://pumbaa-os.readthedocs.org"
+                    },
+                    "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/arduino/esp32/pumbaa-arduino-esp32-2.0.0.zip",
+                    "archiveFileName": "pumbaa-arduino-esp32-2.0.0.zip",
+                    "checksum": "SHA-256:b2dd61ab0f0daad5240f67ad84a009ad4bc318e18b9ed39bc714a6200640db53",
+                    "size": "11952179",
+                    "boards": [
+                        {
+                            "name": "Nano32"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Pumbaa",
+                            "version": "1.22.0-59",
+                            "name": "xtensa-esp32-elf-gcc"
+                        }
+                    ]
+                },
+                {
+                    "name": "Pumbaa",
+                    "architecture": "esp32",
+                    "version": "2.1.0",
+                    "category": "Pumbaa",
+                    "help": {
+                        "online": "https://pumbaa-os.readthedocs.org"
+                    },
+                    "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/arduino/esp32/pumbaa-arduino-esp32-2.1.0.zip",
+                    "archiveFileName": "pumbaa-arduino-esp32-2.1.0.zip",
+                    "checksum": "SHA-256:5a465034ad1133d20fda8ec913841dbe6c5cc10f82c7644ecde4a2df2727781a",
+                    "size": "11162583",
+                    "boards": [
+                        {
+                            "name": "Nano32"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Pumbaa",
+                            "version": "1.22.0-59",
+                            "name": "xtensa-esp32-elf-gcc"
+                        }
+                    ]
+                },
+                {
+                    "name": "Pumbaa",
+                    "architecture": "esp32",
+                    "version": "2.2.0",
+                    "category": "Pumbaa",
+                    "help": {
+                        "online": "https://pumbaa.readthedocs.org"
+                    },
+                    "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/arduino/esp32/pumbaa-arduino-esp32-2.2.0.zip",
+                    "archiveFileName": "pumbaa-arduino-esp32-2.2.0.zip",
+                    "checksum": "SHA-256:27a9163b2aab1fc609ffd5e765eb1a27365b3ea549d2567c6d3be13fd2e27ae5",
+                    "size": "15136036",
+                    "boards": [
+                        {
+                            "name": "Nano32"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Pumbaa",
+                            "version": "1.22.0-59",
+                            "name": "xtensa-esp32-elf-gcc"
+                        }
+                    ]
+                },
+                {
+                    "name": "Pumbaa",
+                    "architecture": "esp32",
+                    "version": "2.2.1",
+                    "category": "Pumbaa",
+                    "help": {
+                        "online": "https://pumbaa.readthedocs.org"
+                    },
+                    "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/arduino/esp32/pumbaa-arduino-esp32-2.2.1.zip",
+                    "archiveFileName": "pumbaa-arduino-esp32-2.2.1.zip",
+                    "checksum": "SHA-256:a62db794c11432bae515fe1e78daf7b00dfb5744c2f559f5284ce32bd0bb06d8",
+                    "size": "15136036",
+                    "boards": [
+                        {
+                            "name": "Nano32"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Pumbaa",
+                            "version": "1.22.0-59",
+                            "name": "xtensa-esp32-elf-gcc"
+                        }
+                    ]
+                },
+                {
+                    "name": "Pumbaa",
+                    "architecture": "esp32",
+                    "version": "2.2.2",
+                    "category": "Pumbaa",
+                    "help": {
+                        "online": "https://pumbaa.readthedocs.org"
+                    },
+                    "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/arduino/esp32/pumbaa-arduino-esp32-2.2.2.zip",
+                    "archiveFileName": "pumbaa-arduino-esp32-2.2.2.zip",
+                    "checksum": "SHA-256:5ae62176ce1a0fbb1c58eceefaa3a5e830997f0141c8e9671fe34b29a22af8f9",
+                    "size": "15136036",
+                    "boards": [
+                        {
+                            "name": "Nano32"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Pumbaa",
+                            "version": "1.22.0-59",
+                            "name": "xtensa-esp32-elf-gcc"
+                        }
+                    ]
+                },
+                {
+                    "name": "Pumbaa",
+                    "architecture": "esp32",
+                    "version": "2.3.0",
+                    "category": "Pumbaa",
+                    "help": {
+                        "online": "https://pumbaa.readthedocs.org"
+                    },
+                    "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/arduino/esp32/pumbaa-arduino-esp32-2.3.0.zip",
+                    "archiveFileName": "pumbaa-arduino-esp32-2.3.0.zip",
+                    "checksum": "SHA-256:a7f48964296eeb6bd042ea9c1767d33a64188e7449188fcad0200c425538cae6",
+                    "size": "15168084",
+                    "boards": [
+                        {
+                            "name": "Nano32"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Pumbaa",
+                            "version": "1.22.0-59",
+                            "name": "xtensa-esp32-elf-gcc"
+                        }
+                    ]
+                },
+                {
+                    "name": "Pumbaa",
+                    "architecture": "esp32",
+                    "version": "2.3.1",
+                    "category": "Pumbaa",
+                    "help": {
+                        "online": "https://pumbaa.readthedocs.org"
+                    },
+                    "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/arduino/esp32/pumbaa-arduino-esp32-2.3.1.zip",
+                    "archiveFileName": "pumbaa-arduino-esp32-2.3.1.zip",
+                    "checksum": "SHA-256:cdec48277b6b042530340417ca0e73a2b0130bd23b0d1816f2637834878499ac",
+                    "size": "15168125",
+                    "boards": [
+                        {
+                            "name": "Nano32"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Pumbaa",
+                            "version": "1.22.0-59",
+                            "name": "xtensa-esp32-elf-gcc"
+                        }
+                    ]
+                },
+                {
+                    "name": "Pumbaa",
+                    "architecture": "esp32",
+                    "version": "2.3.2",
+                    "category": "Pumbaa",
+                    "help": {
+                        "online": "https://pumbaa.readthedocs.org"
+                    },
+                    "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/arduino/esp32/pumbaa-arduino-esp32-2.3.2.zip",
+                    "archiveFileName": "pumbaa-arduino-esp32-2.3.2.zip",
+                    "checksum": "SHA-256:11be8cb8d7c02492579396e7249515825170e85b5ad08e1616d81134a11d9385",
+                    "size": "15168125",
+                    "boards": [
+                        {
+                            "name": "Nano32"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Pumbaa",
+                            "version": "1.22.0-59",
+                            "name": "xtensa-esp32-elf-gcc"
+                        }
+                    ]
+                },
+                {
+                    "name": "Pumbaa",
+                    "architecture": "esp32",
+                    "version": "2.4.0",
+                    "category": "Pumbaa",
+                    "help": {
+                        "online": "https://pumbaa.readthedocs.org"
+                    },
+                    "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/arduino/esp32/pumbaa-arduino-esp32-2.4.0.zip",
+                    "archiveFileName": "pumbaa-arduino-esp32-2.4.0.zip",
+                    "checksum": "SHA-256:dbe6cfa108653542d66816f2933294c52bc1a368ad39f8cba17f6bf8ee68be5a",
+                    "size": "14436038",
+                    "boards": [
+                        {
+                            "name": "Nano32"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Pumbaa",
+                            "version": "1.22.0-59",
+                            "name": "xtensa-esp32-elf-gcc"
+                        }
+                    ]
+                },
+                {
+                    "name": "Pumbaa",
+                    "architecture": "esp32",
+                    "version": "2.6.0",
+                    "category": "Pumbaa",
+                    "help": {
+                        "online": "https://pumbaa.readthedocs.org"
+                    },
+                    "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/arduino/esp32/pumbaa-arduino-esp32-2.6.0.zip",
+                    "archiveFileName": "pumbaa-arduino-esp32-2.6.0.zip",
+                    "checksum": "SHA-256:713a137db1f406a2e65e900732487d14892a2f5a6c2c789d8d13d89edb85138c",
+                    "size": "14532488",
+                    "boards": [
+                        {
+                            "name": "Nano32"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Pumbaa",
+                            "version": "1.22.0-59",
+                            "name": "xtensa-esp32-elf-gcc"
+                        }
+                    ]
+                },
+                {
+                    "name": "Pumbaa",
+                    "architecture": "esp32",
+                    "version": "2.6.1",
+                    "category": "Pumbaa",
+                    "help": {
+                        "online": "https://pumbaa.readthedocs.org"
+                    },
+                    "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/arduino/esp32/pumbaa-arduino-esp32-2.6.1.zip",
+                    "archiveFileName": "pumbaa-arduino-esp32-2.6.1.zip",
+                    "checksum": "SHA-256:ab33ce39e70c86b06b94364437147053b6b675f541dac5ca0b80189debc3d615",
+                    "size": "14532488",
+                    "boards": [
+                        {
+                            "name": "Nano32"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Pumbaa",
+                            "version": "1.22.0-59",
+                            "name": "xtensa-esp32-elf-gcc"
+                        }
+                    ]
+                },
+                {
+                    "name": "Pumbaa",
+                    "architecture": "esp32",
+                    "version": "3.0.0",
+                    "category": "Pumbaa",
+                    "help": {
+                        "online": "https://pumbaa.readthedocs.org"
+                    },
+                    "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/arduino/esp32/pumbaa-arduino-esp32-3.0.0.zip",
+                    "archiveFileName": "pumbaa-arduino-esp32-3.0.0.zip",
+                    "checksum": "SHA-256:6f5622694251152ba7d45ed6c7f8169feab2cbbfc2327eb9a870618168420305",
+                    "size": "14699423",
+                    "boards": [
+                        {
+                            "name": "Nano32"
+                        },
+                        {
+                            "name": "ESP32-DevKitC"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Pumbaa",
+                            "version": "1.22.0-59",
+                            "name": "xtensa-esp32-elf-gcc"
+                        }
+                    ]
+                },
+                {
+                    "name": "Pumbaa",
+                    "architecture": "esp32",
+                    "version": "3.0.1",
+                    "category": "Pumbaa",
+                    "help": {
+                        "online": "https://pumbaa.readthedocs.org"
+                    },
+                    "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/arduino/esp32/pumbaa-arduino-esp32-3.0.1.zip",
+                    "archiveFileName": "pumbaa-arduino-esp32-3.0.1.zip",
+                    "checksum": "SHA-256:cf7b2e3b69a2273e3e851dfe9c11ae84c28283cf1b54fbcf67175c4d20dd313e",
+                    "size": "14699423",
+                    "boards": [
+                        {
+                            "name": "Nano32"
+                        },
+                        {
+                            "name": "ESP32-DevKitC"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Pumbaa",
+                            "version": "1.22.0-59",
+                            "name": "xtensa-esp32-elf-gcc"
+                        }
+                    ]
+                },
+                {
+                    "name": "Pumbaa",
+                    "architecture": "esp32",
+                    "version": "3.0.2",
+                    "category": "Pumbaa",
+                    "help": {
+                        "online": "https://pumbaa.readthedocs.org"
+                    },
+                    "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/arduino/esp32/pumbaa-arduino-esp32-3.0.2.zip",
+                    "archiveFileName": "pumbaa-arduino-esp32-3.0.2.zip",
+                    "checksum": "SHA-256:d7f0045b160538666b6f802f8be69e601608416d25cdf93966f3efa5bffa21a7",
+                    "size": "14699416",
+                    "boards": [
+                        {
+                            "name": "Nano32"
+                        },
+                        {
+                            "name": "ESP32-DevKitC"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "Pumbaa",
+                            "version": "1.22.0-59",
+                            "name": "xtensa-esp32-elf-gcc"
+                        }
+                    ]
+                }
+            ],
+            "tools": [
+                {
+                    "name": "xtensa-esp32-elf-gcc",
+                    "version": "1.22.0-59",
+                    "systems": [
+                        {
+                            "host": "i686-mingw32",
+                            "url": "https://github.com/eerimoq/simba-release/raw/master/arduino/esp32/tools/xtensa-esp32-elf-win32-1.22.0-59.zip",
+                            "archiveFileName": "xtensa-esp32-elf-win32-1.22.0-59.zip",
+                            "checksum": "SHA-256:67cefb190f6dcc6a04f8af908f36daa1bf80b95729104442801c695e21d175a3",
+                            "size": "64005933"
+                        },
+                        {
+                            "host": "x86_64-apple-darwin",
+                            "url": "https://github.com/eerimoq/simba-release/raw/master/arduino/esp32/tools/xtensa-esp32-elf-osx-1.22.0-59.tar.gz",
+                            "archiveFileName": "xtensa-esp32-elf-osx-1.22.0-59.tar.gz",
+                            "checksum": "SHA-256:95abdd14b49056ba63981f590f7e54a54b846ab93dc38b81c1f098a240e1599d",
+                            "size": "37875781"
+                        },
+                        {
+                            "host": "x86_64-pc-linux-gnu",
+                            "url": "https://github.com/eerimoq/simba-release/raw/master/arduino/esp32/tools/xtensa-esp32-elf-linux64-1.22.0-59.tar.gz",
+                            "archiveFileName": "xtensa-esp32-elf-linux64-1.22.0-59.tar.gz",
+                            "checksum": "SHA-256:50e3864d9a2156aeec20f25a34b9cd11e4669736ffe622b75cd9f7bc9febca99",
+                            "size": "33538221"
+                        },
+                        {
+                            "host": "i686-pc-linux-gnu",
+                            "url": "https://github.com/eerimoq/simba-release/raw/master/arduino/esp32/tools/xtensa-esp32-elf-linux32-1.22.0-59.tar.gz",
+                            "archiveFileName": "xtensa-esp32-elf-linux32-1.22.0-59.tar.gz",
+                            "checksum": "SHA-256:53d45740d68410f9e62cdcf5315d282cf017a5485a6217ba648a1ecae7c5dbf6",
+                            "size": "32125561"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
