@@ -1,7 +1,7 @@
 {
-  "name":"framework-pumbaa",
-  "description":"Pumbaa OS",
-  "url":"https://github.com/OS-Q/N17",
+  "name":"framework-N17",
+  "description":"framework N17 Pumbaa OS",
+  "url":"https://github.com/eerimoq/pumbaa",
   "version":"1.0.0",
   "repository": {
     "type": "git",
