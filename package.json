@@ -1,10 +1,10 @@
 {
-  "name":"framework-N17",
-  "description":"framework N17 Pumbaa OS",
+  "name":"E52B",
+  "description":"Pumbaa OS",
   "url":"https://github.com/eerimoq/pumbaa",
   "version":"1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OS-Q/N17.git"
+    "url": "https://github.com/OS-Q/E52B.git"
   }
 }

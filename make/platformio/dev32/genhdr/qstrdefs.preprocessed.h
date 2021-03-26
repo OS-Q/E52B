@@ -7,7 +7,7 @@
 # 45 "/home/erik/workspace/pumbaa/micropython/py/mpconfig.h"
 # 1 "/home/erik/workspace/pumbaa/src/port/mpconfigport.h" 1
 # 34 "/home/erik/workspace/pumbaa/src/port/mpconfigport.h"
-# 1 "/home/erik/workspace/pumbaa/src/boards/arduino_due/simba_board.h" 1
+# 1 "/home/erik/workspace/pumbaa/src/boards/nano32/simba_board.h" 1
 # 35 "/home/erik/workspace/pumbaa/src/port/mpconfigport.h" 2
 # 1 "/home/erik/workspace/pumbaa/src/config.h" 1
 # 35 "/home/erik/workspace/pumbaa/src/config.h"
@@ -36,91 +36,105 @@ typedef long mp_off_t;
 
 
 
-# 1 "/usr/include/newlib/alloca.h" 1 3
-# 10 "/usr/include/newlib/alloca.h" 3
-# 1 "/usr/include/newlib/_ansi.h" 1 3
-# 15 "/usr/include/newlib/_ansi.h" 3
-# 1 "/usr/include/newlib/newlib.h" 1 3
-# 16 "/usr/include/newlib/_ansi.h" 2 3
-# 1 "/usr/include/newlib/sys/config.h" 1 3
+# 1 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/alloca.h" 1
+# 10 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/alloca.h"
+# 1 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/_ansi.h" 1
+# 15 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/_ansi.h"
+# 1 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/newlib.h" 1
+# 16 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/_ansi.h" 2
+# 1 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/config.h" 1
 
 
 
-# 1 "/usr/include/newlib/machine/ieeefp.h" 1 3
-# 5 "/usr/include/newlib/sys/config.h" 2 3
-# 1 "/usr/include/newlib/sys/features.h" 1 3
-# 6 "/usr/include/newlib/sys/config.h" 2 3
-# 17 "/usr/include/newlib/_ansi.h" 2 3
-# 11 "/usr/include/newlib/alloca.h" 2 3
-# 1 "/usr/include/newlib/sys/reent.h" 1 3
-# 13 "/usr/include/newlib/sys/reent.h" 3
-# 1 "/usr/include/newlib/_ansi.h" 1 3
-# 14 "/usr/include/newlib/sys/reent.h" 2 3
-# 1 "/usr/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h" 1 3 4
-# 147 "/usr/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h" 3 4
+# 1 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/machine/ieeefp.h" 1
+# 5 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/config.h" 2
+# 1 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/features.h" 1
+# 6 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/config.h" 2
+# 189 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/config.h"
+# 1 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/esp32/include/xtensa/config/core-isa.h" 1
+# 190 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/config.h" 2
+# 17 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/_ansi.h" 2
+# 11 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/alloca.h" 2
+# 1 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/reent.h" 1
+# 13 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/reent.h"
+# 1 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/_ansi.h" 1
+# 14 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/reent.h" 2
+# 1 "/home/erik/workspace/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stddef.h" 1 3 4
+# 149 "/home/erik/workspace/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stddef.h" 3 4
+
+# 149 "/home/erik/workspace/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stddef.h" 3 4
 typedef int ptrdiff_t;
-# 212 "/usr/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h" 3 4
+# 216 "/home/erik/workspace/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stddef.h" 3 4
 typedef unsigned int size_t;
-# 324 "/usr/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h" 3 4
-typedef unsigned int wchar_t;
-# 15 "/usr/include/newlib/sys/reent.h" 2 3
-# 1 "/usr/include/newlib/sys/_types.h" 1 3
-# 12 "/usr/include/newlib/sys/_types.h" 3
-# 1 "/usr/include/newlib/machine/_types.h" 1 3
+# 328 "/home/erik/workspace/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stddef.h" 3 4
+typedef short unsigned int wchar_t;
+# 15 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/reent.h" 2
+# 1 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/_types.h" 1
+# 12 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/_types.h"
+# 1 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/machine/_types.h" 1
 
 
 
 
 
 
-# 1 "/usr/include/newlib/machine/_default_types.h" 1 3
-# 27 "/usr/include/newlib/machine/_default_types.h" 3
-typedef signed char __int8_t;
+# 1 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/machine/_default_types.h" 1
+# 17 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/machine/_default_types.h"
 
-typedef unsigned char __uint8_t;
-# 41 "/usr/include/newlib/machine/_default_types.h" 3
-typedef short int __int16_t;
+# 17 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/machine/_default_types.h"
+typedef signed char __int8_t ;
+typedef unsigned char __uint8_t ;
 
-typedef short unsigned int __uint16_t;
-# 63 "/usr/include/newlib/machine/_default_types.h" 3
-typedef long int __int32_t;
 
-typedef long unsigned int __uint32_t;
-# 89 "/usr/include/newlib/machine/_default_types.h" 3
-typedef long long int __int64_t;
+typedef signed short __int16_t;
+typedef unsigned short __uint16_t;
 
-typedef long long unsigned int __uint64_t;
-# 120 "/usr/include/newlib/machine/_default_types.h" 3
-typedef signed char __int_least8_t;
 
-typedef unsigned char __uint_least8_t;
-# 146 "/usr/include/newlib/machine/_default_types.h" 3
-typedef short int __int_least16_t;
+typedef signed int __int32_t;
+typedef unsigned int __uint32_t;
 
-typedef short unsigned int __uint_least16_t;
-# 168 "/usr/include/newlib/machine/_default_types.h" 3
-typedef long int __int_least32_t;
 
-typedef long unsigned int __uint_least32_t;
-# 186 "/usr/include/newlib/machine/_default_types.h" 3
-typedef long long int __int_least64_t;
+typedef signed long long __int64_t;
+typedef unsigned long long __uint64_t;
 
-typedef long long unsigned int __uint_least64_t;
-# 200 "/usr/include/newlib/machine/_default_types.h" 3
+
+typedef __int8_t __int_least8_t;
+typedef __uint8_t __uint_least8_t;
+
+
+typedef __int16_t __int_least16_t;
+typedef __uint16_t __uint_least16_t;
+
+
+typedef __int32_t __int_least32_t;
+typedef __uint32_t __uint_least32_t;
+
+
+typedef __int64_t __int_least64_t;
+typedef __uint64_t __uint_least64_t;
+
+
 typedef int __intptr_t;
-
 typedef unsigned int __uintptr_t;
-# 8 "/usr/include/newlib/machine/_types.h" 2 3
-# 13 "/usr/include/newlib/sys/_types.h" 2 3
-# 1 "/usr/include/newlib/sys/lock.h" 1 3
-
-
-
-
-
-typedef int _LOCK_T;
-typedef int _LOCK_RECURSIVE_T;
-# 14 "/usr/include/newlib/sys/_types.h" 2 3
+# 8 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/machine/_types.h" 2
+# 13 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/_types.h" 2
+# 1 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/lock.h" 1
+# 11 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/lock.h"
+typedef int _lock_t;
+typedef _lock_t _LOCK_RECURSIVE_T;
+typedef _lock_t _LOCK_T;
+# 28 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/lock.h"
+void _lock_init(_lock_t *lock);
+void _lock_init_recursive(_lock_t *lock);
+void _lock_close(_lock_t *lock);
+void _lock_close_recursive(_lock_t *lock);
+void _lock_acquire(_lock_t *lock);
+void _lock_acquire_recursive(_lock_t *lock);
+int _lock_try_acquire(_lock_t *lock);
+int _lock_try_acquire_recursive(_lock_t *lock);
+void _lock_release(_lock_t *lock);
+void _lock_release_recursive(_lock_t *lock);
+# 14 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/_types.h" 2
 
 
 typedef long _off_t;
@@ -147,16 +161,20 @@ __extension__ typedef long long _off64_t;
 
 
 typedef long _fpos_t;
-# 55 "/usr/include/newlib/sys/_types.h" 3
+# 55 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/_types.h"
 typedef signed int _ssize_t;
-# 67 "/usr/include/newlib/sys/_types.h" 3
-# 1 "/usr/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h" 1 3 4
-# 353 "/usr/lib/gcc/arm-none-eabi/4.9.3/include/stddef.h" 3 4
+# 67 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/_types.h"
+# 1 "/home/erik/workspace/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stddef.h" 1 3 4
+# 357 "/home/erik/workspace/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stddef.h" 3 4
+
+# 357 "/home/erik/workspace/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include/stddef.h" 3 4
 typedef unsigned int wint_t;
-# 68 "/usr/include/newlib/sys/_types.h" 2 3
+# 68 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/_types.h" 2
 
 
 
+
+# 71 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/_types.h"
 typedef struct
 {
   int __count;
@@ -175,7 +193,7 @@ typedef _LOCK_RECURSIVE_T _flock_t;
 
 
 typedef void *_iconv_t;
-# 16 "/usr/include/newlib/sys/reent.h" 2 3
+# 16 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/reent.h" 2
 
 
 
@@ -183,7 +201,7 @@ typedef void *_iconv_t;
 
 
 typedef unsigned long __ULong;
-# 38 "/usr/include/newlib/sys/reent.h" 3
+# 38 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/reent.h"
 struct _reent;
 
 
@@ -227,20 +245,37 @@ struct _on_exit_args {
 
  __ULong _is_cxa;
 };
-# 91 "/usr/include/newlib/sys/reent.h" 3
+
+
 struct _atexit {
  struct _atexit *_next;
  int _ind;
-
  void (*_fns[32])(void);
-        struct _on_exit_args _on_exit_args;
+        struct _on_exit_args * _on_exit_args_ptr;
 };
-# 115 "/usr/include/newlib/sys/reent.h" 3
+# 115 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/reent.h"
 struct __sbuf {
  unsigned char *_base;
  int _size;
 };
-# 179 "/usr/include/newlib/sys/reent.h" 3
+# 151 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/reent.h"
+struct __sFILE_fake {
+  unsigned char *_p;
+  int _r;
+  int _w;
+  short _flags;
+  short _file;
+  struct __sbuf _bf;
+  int _lbfsize;
+
+  struct _reent *_data;
+};
+
+
+
+
+extern void __sinit (struct _reent *);
+# 179 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/reent.h"
 struct __sFILE {
   unsigned char *_p;
   int _r;
@@ -251,7 +286,7 @@ struct __sFILE {
   int _lbfsize;
 
 
-
+  struct _reent *_data;
 
 
 
@@ -282,7 +317,7 @@ struct __sFILE {
   _off_t _offset;
 
 
-  struct _reent *_data;
+
 
 
 
@@ -291,7 +326,7 @@ struct __sFILE {
   _mbstate_t _mbstate;
   int _flags2;
 };
-# 285 "/usr/include/newlib/sys/reent.h" 3
+# 285 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/reent.h"
 typedef struct __sFILE __FILE;
 
 
@@ -302,19 +337,49 @@ struct _glue
   int _niobs;
   __FILE *_iobs;
 };
-# 317 "/usr/include/newlib/sys/reent.h" 3
+# 317 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/reent.h"
 struct _rand48 {
   unsigned short _seed[3];
   unsigned short _mult[3];
   unsigned short _add;
 
 
-
+  __extension__ unsigned long long _rand_next;
 
 };
-# 569 "/usr/include/newlib/sys/reent.h" 3
+# 342 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/reent.h"
+struct _mprec
+{
+
+  struct _Bigint *_result;
+  int _result_k;
+  struct _Bigint *_p5s;
+  struct _Bigint **_freelist;
+};
+
+
+struct _misc_reent
+{
+
+  char *_strtok_last;
+  _mbstate_t _mblen_state;
+  _mbstate_t _wctomb_state;
+  _mbstate_t _mbtowc_state;
+  char _l64a_buf[8];
+  int _getdate_err;
+  _mbstate_t _mbrlen_state;
+  _mbstate_t _mbrtowc_state;
+  _mbstate_t _mbsrtowcs_state;
+  _mbstate_t _wcrtomb_state;
+  _mbstate_t _wcsrtombs_state;
+};
+
+
+
 struct _reent
 {
+
+
   int _errno;
 
 
@@ -323,59 +388,30 @@ struct _reent
   __FILE *_stdin, *_stdout, *_stderr;
 
   int _inc;
-  char _emergency[25];
+
+  char *_emergency;
+
+  int __sdidinit;
 
   int _current_category;
   const char *_current_locale;
 
-  int __sdidinit;
+  struct _mprec *_mp;
 
   void (* __cleanup) (struct _reent *);
 
-
-  struct _Bigint *_result;
-  int _result_k;
-  struct _Bigint *_p5s;
-  struct _Bigint **_freelist;
+  int _gamma_signgam;
 
 
   int _cvtlen;
   char *_cvtbuf;
 
-  union
-    {
-      struct
-        {
-          unsigned int _unused_rand;
-          char * _strtok_last;
-          char _asctime_buf[26];
-          struct __tm _localtime_buf;
-          int _gamma_signgam;
-          __extension__ unsigned long long _rand_next;
-          struct _rand48 _r48;
-          _mbstate_t _mblen_state;
-          _mbstate_t _mbtowc_state;
-          _mbstate_t _wctomb_state;
-          char _l64a_buf[8];
-          char _signal_buf[24];
-          int _getdate_err;
-          _mbstate_t _mbrlen_state;
-          _mbstate_t _mbrtowc_state;
-          _mbstate_t _mbsrtowcs_state;
-          _mbstate_t _wcrtomb_state;
-          _mbstate_t _wcsrtombs_state;
-   int _h_errno;
-        } _reent;
+  struct _rand48 *_r48;
+  struct __tm *_localtime_buf;
+  char *_asctime_buf;
 
 
-
-      struct
-        {
-
-          unsigned char * _nextf[30];
-          unsigned int _nmalloc[30];
-        } _unused;
-    } _new;
+  void (**(_sig_func))(int);
 
 
 
@@ -383,21 +419,26 @@ struct _reent
   struct _atexit _atexit0;
 
 
-
-  void (**(_sig_func))(int);
-
-
-
-
   struct _glue __sglue;
-  __FILE __sf[3];
+  __FILE *__sf;
+  struct _misc_reent *_misc;
+  char *_signal_buf;
 };
-# 762 "/usr/include/newlib/sys/reent.h" 3
-extern struct _reent *_impure_ptr ;
-extern struct _reent *const _global_impure_ptr ;
+
+extern const struct __sFILE_fake __sf_fake_stdin;
+extern const struct __sFILE_fake __sf_fake_stdout;
+extern const struct __sFILE_fake __sf_fake_stderr;
+# 766 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/sys/reent.h"
+extern struct _reent *_global_impure_ptr ;
 
 void _reclaim_reent (struct _reent *);
-# 12 "/usr/include/newlib/alloca.h" 2 3
+
+
+
+
+
+  struct _reent * __getreent (void);
+# 12 "/home/erik/workspace/pumbaa/simba/3pp/esp32/inc/newlib/include/alloca.h" 2
 # 595 "/home/erik/workspace/pumbaa/src/pumbaa_config_default.h" 2
 # 37 "/home/erik/workspace/pumbaa/src/port/mpconfigport.h" 2
 # 46 "/home/erik/workspace/pumbaa/micropython/py/mpconfig.h" 2
@@ -439,6 +480,8 @@ Q(FloatingPointError)
 Q(UnboundLocalError)
 Q(ADC_0)
 
+Q(AF_INET)
+
 Q(Adc)
 
 Q(Adc)
@@ -463,8 +506,6 @@ Q(BAUDRATE_1MBPS)
 
 Q(BAUDRATE_400KBPS)
 
-Q(BOTH)
-
 Q(BaseException)
 
 Q(BaseException)
@@ -475,13 +516,17 @@ Q(BytesIO)
 
 Q(CAN_0)
 
-Q(CAN_1)
+Q(CERT_NONE)
+
+Q(CERT_REQUIRED)
+
+Q(CONTENT_TYPE_TEXT_HTML)
+
+Q(CONTENT_TYPE_TEXT_PLAIN)
 
 Q(Can)
 
 Q(Can)
-
-Q(DAC_0)
 
 Q(Dac)
 
@@ -498,144 +543,6 @@ Q(Ds18b20)
 Q(EOFError)
 
 Q(EOFError)
-
-Q(EXTI_A0)
-
-Q(EXTI_A1)
-
-Q(EXTI_A10)
-
-Q(EXTI_A11)
-
-Q(EXTI_A2)
-
-Q(EXTI_A3)
-
-Q(EXTI_A4)
-
-Q(EXTI_A5)
-
-Q(EXTI_A6)
-
-Q(EXTI_A7)
-
-Q(EXTI_A8)
-
-Q(EXTI_A9)
-
-Q(EXTI_D0)
-
-Q(EXTI_D1)
-
-Q(EXTI_D10)
-
-Q(EXTI_D11)
-
-Q(EXTI_D12)
-
-Q(EXTI_D13)
-
-Q(EXTI_D14)
-
-Q(EXTI_D15)
-
-Q(EXTI_D16)
-
-Q(EXTI_D17)
-
-Q(EXTI_D18)
-
-Q(EXTI_D19)
-
-Q(EXTI_D2)
-
-Q(EXTI_D20)
-
-Q(EXTI_D21)
-
-Q(EXTI_D22)
-
-Q(EXTI_D23)
-
-Q(EXTI_D24)
-
-Q(EXTI_D25)
-
-Q(EXTI_D26)
-
-Q(EXTI_D27)
-
-Q(EXTI_D28)
-
-Q(EXTI_D29)
-
-Q(EXTI_D3)
-
-Q(EXTI_D30)
-
-Q(EXTI_D31)
-
-Q(EXTI_D32)
-
-Q(EXTI_D33)
-
-Q(EXTI_D34)
-
-Q(EXTI_D35)
-
-Q(EXTI_D36)
-
-Q(EXTI_D37)
-
-Q(EXTI_D38)
-
-Q(EXTI_D39)
-
-Q(EXTI_D4)
-
-Q(EXTI_D40)
-
-Q(EXTI_D41)
-
-Q(EXTI_D42)
-
-Q(EXTI_D43)
-
-Q(EXTI_D44)
-
-Q(EXTI_D45)
-
-Q(EXTI_D46)
-
-Q(EXTI_D47)
-
-Q(EXTI_D48)
-
-Q(EXTI_D49)
-
-Q(EXTI_D5)
-
-Q(EXTI_D50)
-
-Q(EXTI_D51)
-
-Q(EXTI_D52)
-
-Q(EXTI_D53)
-
-Q(EXTI_D6)
-
-Q(EXTI_D7)
-
-Q(EXTI_D8)
-
-Q(EXTI_D9)
-
-Q(EXTI_DAC0)
-
-Q(EXTI_DAC1)
-
-Q(EXTI_LED)
 
 Q(EepromI2C)
 
@@ -653,23 +560,27 @@ Q(Exception)
 
 Q(Exception)
 
-Q(Exti)
-
-Q(Exti)
-
-Q(FALLING)
-
 Q(FLAGS_EXTENDED_FRAME)
 
-Q(FLASH_0)
-
 Q(Flash)
 
 Q(Flash)
 
+Q(GET)
+
 Q(GeneratorExit)
 
 Q(GeneratorExit)
+
+Q(HttpServer)
+
+Q(HttpServer)
+
+Q(HttpServerConnection)
+
+Q(HttpServerWebSocket)
+
+Q(HttpServerWebsocket)
 
 Q(I2C)
 
@@ -727,6 +638,14 @@ Q(NotImplementedError)
 
 Q(NotImplementedError)
 
+Q(OP_MODE_NULL)
+
+Q(OP_MODE_SOFTAP)
+
+Q(OP_MODE_STATION)
+
+Q(OP_MODE_STATION_SOFTAP)
+
 Q(OSError)
 
 Q(OSError)
@@ -749,141 +668,75 @@ Q(Owi)
 
 Q(PERIODIC)
 
-Q(PIN_A0)
+Q(PHY_MODE_11B)
 
-Q(PIN_A1)
+Q(PHY_MODE_11G)
 
-Q(PIN_A10)
+Q(PHY_MODE_11N)
 
-Q(PIN_A11)
+Q(PIN_GPIO00)
 
-Q(PIN_A2)
+Q(PIN_GPIO01)
 
-Q(PIN_A3)
+Q(PIN_GPIO02)
 
-Q(PIN_A4)
+Q(PIN_GPIO03)
 
-Q(PIN_A5)
+Q(PIN_GPIO04)
 
-Q(PIN_A6)
+Q(PIN_GPIO05)
 
-Q(PIN_A7)
+Q(PIN_GPIO06)
 
-Q(PIN_A8)
+Q(PIN_GPIO07)
 
-Q(PIN_A9)
+Q(PIN_GPIO08)
 
-Q(PIN_D0)
+Q(PIN_GPIO09)
 
-Q(PIN_D1)
+Q(PIN_GPIO10)
 
-Q(PIN_D10)
+Q(PIN_GPIO11)
 
-Q(PIN_D11)
+Q(PIN_GPIO12)
 
-Q(PIN_D12)
+Q(PIN_GPIO13)
 
-Q(PIN_D13)
+Q(PIN_GPIO14)
 
-Q(PIN_D14)
+Q(PIN_GPIO15)
 
-Q(PIN_D15)
+Q(PIN_GPIO16)
 
-Q(PIN_D16)
+Q(PIN_GPIO17)
 
-Q(PIN_D17)
+Q(PIN_GPIO18)
 
-Q(PIN_D18)
+Q(PIN_GPIO19)
 
-Q(PIN_D19)
+Q(PIN_GPIO21)
 
-Q(PIN_D2)
+Q(PIN_GPIO22)
 
-Q(PIN_D20)
+Q(PIN_GPIO23)
 
-Q(PIN_D21)
+Q(PIN_GPIO25)
 
-Q(PIN_D22)
+Q(PIN_GPIO26)
 
-Q(PIN_D23)
+Q(PIN_GPIO27)
 
-Q(PIN_D24)
+Q(PIN_GPIO32)
 
-Q(PIN_D25)
+Q(PIN_GPIO33)
 
-Q(PIN_D26)
+Q(PIN_GPIO34)
 
-Q(PIN_D27)
+Q(PIN_GPIO35)
 
-Q(PIN_D28)
+Q(PIN_GPIO36)
 
-Q(PIN_D29)
-
-Q(PIN_D3)
-
-Q(PIN_D30)
-
-Q(PIN_D31)
-
-Q(PIN_D32)
-
-Q(PIN_D33)
-
-Q(PIN_D34)
-
-Q(PIN_D35)
-
-Q(PIN_D36)
-
-Q(PIN_D37)
-
-Q(PIN_D38)
-
-Q(PIN_D39)
-
-Q(PIN_D4)
-
-Q(PIN_D40)
-
-Q(PIN_D41)
-
-Q(PIN_D42)
-
-Q(PIN_D43)
-
-Q(PIN_D44)
-
-Q(PIN_D45)
-
-Q(PIN_D46)
-
-Q(PIN_D47)
-
-Q(PIN_D48)
-
-Q(PIN_D49)
-
-Q(PIN_D5)
-
-Q(PIN_D50)
-
-Q(PIN_D51)
-
-Q(PIN_D52)
-
-Q(PIN_D53)
-
-Q(PIN_D6)
-
-Q(PIN_D7)
-
-Q(PIN_D8)
-
-Q(PIN_D9)
-
-Q(PIN_DAC0)
-
-Q(PIN_DAC1)
+Q(PIN_GPIO39)
 
 Q(PIN_LED)
 
@@ -891,25 +744,9 @@ Q(POLLHUP)
 
 Q(POLLIN)
 
-Q(PWM_D10)
+Q(POST)
 
-Q(PWM_D11)
-
-Q(PWM_D12)
-
-Q(PWM_D2)
-
-Q(PWM_D3)
-
-Q(PWM_D5)
-
-Q(PWM_D6)
-
-Q(PWM_D7)
-
-Q(PWM_D8)
-
-Q(PWM_D9)
+Q(PROTOCOL_TLS)
 
 Q(Pin)
 
@@ -921,11 +758,19 @@ Q(Queue)
 
 Q(REFERENCE_VCC)
 
-Q(RISING)
+Q(RESPONSE_CODE_200_OK)
+
+Q(RESPONSE_CODE_404_NOT_FOUND)
 
 Q(RuntimeError)
 
 Q(RuntimeError)
+
+Q(SOCK_DGRAM)
+
+Q(SOCK_RAW)
+
+Q(SOCK_STREAM)
 
 Q(SPEED_125KBPS)
 
@@ -945,9 +790,23 @@ Q(SPEED_8MBPS)
 
 Q(SPI_0)
 
-Q(Sd)
+Q(SPI_1)
 
-Q(Sd)
+Q(SPI_2)
+
+Q(SPI_H)
+
+Q(SPI_V)
+
+Q(SSLContext)
+
+Q(SSLContext)
+
+Q(SSLSocket)
+
+Q(SSLSocket)
+
+Q(SocketType)
 
 Q(Spi)
 
@@ -992,6 +851,10 @@ Q(Uart)
 Q(ValueError)
 
 Q(ValueError)
+
+Q(Ws2812)
+
+Q(Ws2812)
 
 Q(ZeroDivisionError)
 
@@ -1117,6 +980,10 @@ Q(__init__)
 
 Q(__init__)
 
+Q(__init__)
+
+Q(__init__)
+
 Q(__iter__)
 
 Q(__le__)
@@ -1140,6 +1007,10 @@ Q(__main__)
 Q(__main__)
 
 Q(__module__)
+
+Q(__name__)
+
+Q(__name__)
 
 Q(__name__)
 
@@ -1285,11 +1156,19 @@ Q(a2b_base64)
 
 Q(abs)
 
+Q(accept)
+
 Q(acos)
 
 Q(acquire)
 
+Q(action)
+
 Q(add)
+
+Q(address)
+
+Q(address)
 
 Q(address)
 
@@ -1329,6 +1208,8 @@ Q(atan)
 
 Q(atan2)
 
+Q(authorization)
+
 Q(b2a_base64)
 
 Q(baudrate)
@@ -1341,6 +1222,8 @@ Q(bin)
 
 Q(binascii)
 
+Q(bind)
+
 Q(board)
 
 Q(board)
@@ -1350,6 +1233,8 @@ Q(bool)
 Q(bool)
 
 Q(bound_method)
+
+Q(bssid)
 
 Q(builtins)
 
@@ -1367,11 +1252,7 @@ Q(bytes)
 
 Q(bytes)
 
-Q(c_size)
-
-Q(c_size)
-
-Q(c_size_mult)
+Q(cafile)
 
 Q(calcsize)
 
@@ -1379,15 +1260,7 @@ Q(callable)
 
 Q(callback)
 
-Q(callback)
-
-Q(ccc)
-
-Q(ccc)
-
 Q(ceil)
-
-Q(channel)
 
 Q(chdir)
 
@@ -1395,17 +1268,25 @@ Q(choice)
 
 Q(chr)
 
-Q(classmethod)
+Q(cipher)
 
 Q(classmethod)
 
-Q(clear)
+Q(classmethod)
 
 Q(clear)
 
 Q(clear)
+
+Q(clear)
+
+Q(clients_max)
 
 Q(clock_stretching_sleep_us)
+
+Q(close)
+
+Q(close)
 
 Q(close)
 
@@ -1437,19 +1318,23 @@ Q(complex)
 
 Q(complex)
 
-Q(const)
+Q(connect)
+
+Q(connection)
 
 Q(const)
 
-Q(convert)
+Q(const)
+
+Q(content_length)
+
+Q(content_type)
 
 Q(convert)
 
 Q(convert)
 
-Q(copy)
-
-Q(copy)
+Q(convert)
 
 Q(copy)
 
@@ -1469,19 +1354,7 @@ Q(count)
 
 Q(count)
 
-Q(crc)
-
-Q(crc)
-
-Q(crc)
-
 Q(crc32)
-
-Q(csd_structure)
-
-Q(csd_structure)
-
-Q(data)
 
 Q(data)
 
@@ -1498,8 +1371,6 @@ Q(delattr)
 Q(deleter)
 
 Q(deselect)
-
-Q(device)
 
 Q(device)
 
@@ -1543,15 +1414,13 @@ Q(drivers)
 
 Q(drivers)
 
-Q(dsr_imp)
-
-Q(dsr_imp)
-
 Q(dumps)
 
 Q(e)
 
 Q(e)
+
+Q(emacs)
 
 Q(enable)
 
@@ -1569,9 +1438,9 @@ Q(enumerate)
 
 Q(erase)
 
-Q(erase_blk_en)
+Q(esp_wifi)
 
-Q(erase_blk_en)
+Q(esp_wifi)
 
 Q(eval)
 
@@ -1587,23 +1456,19 @@ Q(exp)
 
 Q(exp)
 
+Q(expect)
+
 Q(extend)
 
 Q(extend)
 
 Q(fabs)
 
-Q(file)
+Q(family)
 
 Q(file)
 
-Q(file_format)
-
-Q(file_format)
-
-Q(file_format_grp)
-
-Q(file_format_grp)
+Q(file)
 
 Q(filter)
 
@@ -1659,6 +1524,8 @@ Q(function)
 
 Q(function)
 
+Q(gateway)
+
 Q(gc)
 
 Q(gc)
@@ -1676,6 +1543,12 @@ Q(get_devices)
 Q(get_devices)
 
 Q(get_ident)
+
+Q(get_op_mode)
+
+Q(get_phy_mode)
+
+Q(get_server_hostname)
 
 Q(get_temperature)
 
@@ -1745,6 +1618,8 @@ Q(intersection_update)
 
 Q(io)
 
+Q(ip_address)
+
 Q(isalpha)
 
 Q(isdigit)
@@ -1801,6 +1676,8 @@ Q(key)
 
 Q(key)
 
+Q(keyfile)
+
 Q(keys)
 
 Q(keys)
@@ -1815,6 +1692,8 @@ Q(list)
 
 Q(listdir)
 
+Q(listen)
+
 Q(little)
 
 Q(little)
@@ -1822,6 +1701,10 @@ Q(little)
 Q(little)
 
 Q(load)
+
+Q(load_cert_chain)
+
+Q(load_verify_locations)
 
 Q(loads)
 
@@ -1857,8 +1740,6 @@ Q(max)
 
 Q(max_clock_stretching_us)
 
-Q(mdt)
-
 Q(mem_alloc)
 
 Q(mem_current)
@@ -1878,8 +1759,6 @@ Q(micropython)
 Q(micropython)
 
 Q(micropython)
-
-Q(mid)
 
 Q(min)
 
@@ -1903,21 +1782,19 @@ Q(name)
 
 Q(namedtuple)
 
+Q(netmask)
+
 Q(next)
 
+Q(no_route)
+
 Q(nodename)
-
-Q(nsac)
-
-Q(nsac)
 
 Q(object)
 
 Q(object)
 
 Q(oct)
-
-Q(oid)
 
 Q(open)
 
@@ -1937,9 +1814,7 @@ Q(pack_into)
 
 Q(path)
 
-Q(perm_write_protect)
-
-Q(perm_write_protect)
+Q(path)
 
 Q(phase)
 
@@ -1952,12 +1827,12 @@ Q(pi)
 Q(pin_device)
 
 Q(pin_device)
+
+Q(pin_devices)
 
 Q(ping_host_by_ip_address)
 
 Q(platform)
-
-Q(pnm)
 
 Q(polar)
 
@@ -1977,6 +1852,8 @@ Q(pop)
 
 Q(popitem)
 
+Q(port)
+
 Q(pow)
 
 Q(pow)
@@ -1989,17 +1866,11 @@ Q(property)
 
 Q(property)
 
-Q(prv)
-
-Q(psn)
+Q(proto)
 
 Q(qstr_info)
 
 Q(r)
-
-Q(r2w_factor)
-
-Q(r2w_factor)
 
 Q(radians)
 
@@ -2047,25 +1918,9 @@ Q(read)
 
 Q(read)
 
-Q(read_bl_len)
+Q(read)
 
-Q(read_bl_len)
-
-Q(read_bl_partial)
-
-Q(read_bl_partial)
-
-Q(read_blk_misalign)
-
-Q(read_blk_misalign)
-
-Q(read_block)
-
-Q(read_block_into)
-
-Q(read_cid)
-
-Q(read_csd)
+Q(read_into)
 
 Q(read_into)
 
@@ -2103,6 +1958,16 @@ Q(real)
 
 Q(rect)
 
+Q(recv)
+
+Q(recv)
+
+Q(recv_into)
+
+Q(recvfrom)
+
+Q(recvfrom_into)
+
 Q(reference)
 
 Q(register)
@@ -2123,7 +1988,11 @@ Q(replace)
 
 Q(repr)
 
+Q(request)
+
 Q(reset)
+
+Q(response_write)
 
 Q(reverse)
 
@@ -2140,6 +2009,8 @@ Q(rindex)
 Q(rmdir)
 
 Q(round)
+
+Q(routes)
 
 Q(rsplit)
 
@@ -2159,9 +2030,7 @@ Q(sda)
 
 Q(search)
 
-Q(sector_size)
-
-Q(sector_size)
+Q(sec_websocket_key)
 
 Q(seed)
 
@@ -2177,13 +2046,31 @@ Q(send)
 
 Q(send)
 
+Q(send)
+
+Q(send)
+
+Q(sendall)
+
+Q(sendto)
+
 Q(sep)
+
+Q(server_hostname)
+
+Q(server_side)
 
 Q(set)
 
 Q(set)
 
 Q(set_mode)
+
+Q(set_op_mode)
+
+Q(set_phy_mode)
+
+Q(set_verify_mode)
 
 Q(setattr)
 
@@ -2194,6 +2081,8 @@ Q(setter)
 Q(sha256)
 
 Q(sha256)
+
+Q(shutdown)
 
 Q(sin)
 
@@ -2221,6 +2110,30 @@ Q(slice)
 
 Q(slice)
 
+Q(socket)
+
+Q(socket)
+
+Q(socket_read)
+
+Q(socket_write)
+
+Q(softap_dhcp_server_start)
+
+Q(softap_dhcp_server_status)
+
+Q(softap_dhcp_server_stop)
+
+Q(softap_get_ip_info)
+
+Q(softap_get_number_of_connected_stations)
+
+Q(softap_get_station_info)
+
+Q(softap_init)
+
+Q(softap_set_ip_info)
+
 Q(sort)
 
 Q(sorted)
@@ -2229,17 +2142,15 @@ Q(speed)
 
 Q(speed)
 
-Q(spi)
-
 Q(split)
 
 Q(sqrt)
 
 Q(sqrt)
 
-Q(stack_size)
+Q(ssl)
 
-Q(start)
+Q(stack_size)
 
 Q(start)
 
@@ -2269,6 +2180,28 @@ Q(staticmethod)
 
 Q(staticmethod)
 
+Q(station_connect)
+
+Q(station_dhcp_client_start)
+
+Q(station_dhcp_client_status)
+
+Q(station_dhcp_client_stop)
+
+Q(station_disconnect)
+
+Q(station_get_ip_info)
+
+Q(station_get_reconnect_policy)
+
+Q(station_get_status)
+
+Q(station_init)
+
+Q(station_set_ip_info)
+
+Q(station_set_reconnect_policy)
+
 Q(stderr)
 
 Q(stdin)
@@ -2276,8 +2209,6 @@ Q(stdin)
 Q(stdout)
 
 Q(step)
-
-Q(stop)
 
 Q(stop)
 
@@ -2332,10 +2263,6 @@ Q(sys_unlock)
 Q(sysname)
 
 Q(system)
-
-Q(taac)
-
-Q(taac)
 
 Q(take_bus)
 
@@ -2405,23 +2332,13 @@ Q(tm_yday)
 
 Q(tm_year)
 
-Q(tmp_write_protect)
-
-Q(tmp_write_protect)
-
 Q(to_bytes)
 
 Q(toggle)
 
-Q(tran_speed)
-
-Q(tran_speed)
-
 Q(transfer)
 
 Q(transfer_into)
-
-Q(trigger)
 
 Q(trunc)
 
@@ -2430,6 +2347,8 @@ Q(tuple)
 Q(tuple)
 
 Q(tuple)
+
+Q(type)
 
 Q(type)
 
@@ -2489,6 +2408,14 @@ Q(uselect)
 
 Q(uselect)
 
+Q(usocket)
+
+Q(usocket)
+
+Q(ussl)
+
+Q(ussl)
+
 Q(ustruct)
 
 Q(ustruct)
@@ -2509,14 +2436,6 @@ Q(value)
 
 Q(values)
 
-Q(vdd_r_curr_max)
-
-Q(vdd_r_curr_min)
-
-Q(vdd_w_curr_max)
-
-Q(vdd_w_curr_min)
-
 Q(version)
 
 Q(version)
@@ -2525,13 +2444,9 @@ Q(version)
 
 Q(version_info)
 
-Q(wp_grp_enable)
+Q(wrap_socket)
 
-Q(wp_grp_enable)
-
-Q(wp_grp_size)
-
-Q(wp_grp_size)
+Q(wrap_ssl)
 
 Q(write)
 
@@ -2561,19 +2476,9 @@ Q(write)
 
 Q(write)
 
-Q(write_bl_len)
+Q(write)
 
-Q(write_bl_len)
-
-Q(write_bl_partial)
-
-Q(write_blk_misalign)
-
-Q(write_blk_misalign)
-
-Q(write_block)
-
-Q(write_partial)
+Q(write)
 
 Q(zip)
 
