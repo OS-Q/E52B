@@ -87,31 +87,31 @@ B52A.compiler.c.elf.libs={nano32_compiler_c_elf_libs}
 
 ##################################################################
 
-esp32_devkitc.name=ESP32-DevKitC
+B52B.name=B52B
 
-esp32_devkitc.upload.tool=esptool
-esp32_devkitc.upload.speed=115200
-esp32_devkitc.upload.resetmethod=ck
-esp32_devkitc.upload.maximum_size=2000000
-esp32_devkitc.upload.maximum_data_size=294912
-esp32_devkitc.upload.wait_for_upload_port=true
-esp32_devkitc.serial.disableDTR=true
-esp32_devkitc.serial.disableRTS=true
+B52B.upload.tool=esptool
+B52B.upload.speed=115200
+B52B.upload.resetmethod=ck
+B52B.upload.maximum_size=2000000
+B52B.upload.maximum_data_size=294912
+B52B.upload.wait_for_upload_port=true
+B52B.serial.disableDTR=true
+B52B.serial.disableRTS=true
 
-esp32_devkitc.build.mcu=esp32
-esp32_devkitc.build.f_cpu=240000000L
-esp32_devkitc.build.board=Esp32_Devkitc
-esp32_devkitc.build.variant=esp32_devkitc
-esp32_devkitc.build.core=Pumbaa:pumbaa
-esp32_devkitc.build.ldscript=simba.flash.ld
-esp32_devkitc.build.flash_size=4M
-esp32_devkitc.build.flash_mode=dio
-esp32_devkitc.build.flash_freq=40
+B52B.build.mcu=esp32
+B52B.build.f_cpu=240000000L
+B52B.build.board=Nano32
+B52B.build.variant=nano32
+B52B.build.core=Pumbaa:pumbaa
+B52B.build.ldscript=simba.flash.ld
+B52B.build.flash_size=4M
+B52B.build.flash_mode=dio
+B52B.build.flash_freq=40
 
-esp32_devkitc.compiler.c.extra_flags={esp32_devkitc_compiler_c_extra_flags}
-esp32_devkitc.compiler.cpp.extra_flags={esp32_devkitc_compiler_cxx_extra_flags}
-esp32_devkitc.compiler.S.extra_flags={esp32_devkitc_compiler_c_extra_flags}
-esp32_devkitc.compiler.c.elf.extra_flags={esp32_devkitc_compiler_c_elf_extra_flags}
-esp32_devkitc.compiler.c.elf.libs={esp32_devkitc_compiler_c_elf_libs}
+B52B.compiler.c.extra_flags={nano32_compiler_c_extra_flags}
+B52B.compiler.cpp.extra_flags={nano32_compiler_cxx_extra_flags}
+B52B.compiler.S.extra_flags={nano32_compiler_c_extra_flags}
+B52B.compiler.c.elf.extra_flags={nano32_compiler_c_elf_extra_flags}
+B52B.compiler.c.elf.libs={nano32_compiler_c_elf_libs}
 
 ##################################################################
