@@ -24,7 +24,8 @@ micropython/teensy
 micropython/pic16bit
 micropython/bare-arm
 micropython/*.md
-
+make/arduino/sam/
+make/platformio/arduino_due/
 # Coverage output.
 tst/*/*/amber.png
 tst/*/*/emerald.png

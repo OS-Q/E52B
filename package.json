@@ -1,11 +1,7 @@
 {
-  "name": "framework-pumbaa",
+  "name": "E52B",
   "version": "3.0.3",
   "description": "Pumbaa Framework - a port of MicroPython, designed for embedded devices with limited amount of RAM and code memory",
-  "keywords": [
-    "framework"
-  ],
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/eerimoq/pumbaa"
