@@ -17,6 +17,7 @@ README*
 coverage.*
 *piopm
 ACKNOWLEDGEMENTS
+
 examples/
 micropython/docs
 micropython/drivers/cc3000
