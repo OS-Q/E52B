@@ -9,16 +9,19 @@ docs/_build
 *.md
 platformio.py
 README*
-LICENSE*
+*LICENSE*
 *.png
 *.jpg
-*gitmodules
+*.dxf
+*.svg
 coverage.*
 *piopm
+ACKNOWLEDGEMENTS
 examples/
 micropython/docs
 micropython/drivers/cc3000
 micropython/drivers/cc3100
+micropython/cc3200
 micropython/stmhal
 micropython/examples
 micropython/teensy
@@ -27,6 +30,7 @@ micropython/bare-arm
 micropython/*.md
 make/arduino/sam/
 make/platformio/arduino_due/
+
 # Coverage output.
 tst/*/*/amber.png
 tst/*/*/emerald.png
