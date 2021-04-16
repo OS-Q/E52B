@@ -2,9 +2,9 @@
 # @section License
 #
 # The MIT License (MIT)
-# 
+#
 # Copyright (c) 2016-2017, Erik Moqvist
-# 
+#
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation
 # files (the "Software"), to deal in the Software without
@@ -46,6 +46,11 @@ TESTS = \
 endif
 
 ifeq ($(BOARD), nano32)
+TESTS = \
+	tst/all
+endif
+
+ifeq ($(BOARD), B52A)
 TESTS = \
 	tst/all
 endif
@@ -157,9 +162,6 @@ tags:
 
 arduino:
 	+make/arduino/arduino.py --remove-outdir --version $(PUMBAA_VERSION)
-
-platformio:
-	+make/platformio/platformio.py --version $(PUMBAA_VERSION)
 
 mpy-cross:
 	+cd bin && ./build.sh

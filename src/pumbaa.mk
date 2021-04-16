@@ -2,9 +2,9 @@
 # @section License
 #
 # The MIT License (MIT)
-# 
+#
 # Copyright (c) 2016-2017, Erik Moqvist
-# 
+#
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation
 # files (the "Software"), to deal in the Software without
@@ -100,7 +100,7 @@ PUMBAA_SRC += \
 	module_drivers/class_esp_wifi.c
 endif
 
-ifeq ($(BOARD),$(filter $(BOARD), nano32 esp32_devkitc))
+ifeq ($(BOARD),$(filter $(BOARD), B52A B52B nano32 esp32_devkitc))
 PUMBAA_SRC += \
 	mcus/esp32/gccollect.c \
 	module_drivers/class_adc.c \
@@ -232,7 +232,7 @@ MICROPYTHON_SRC += \
 	py/vstr.c \
 	py/warning.c
 
-ifeq ($(BOARD),$(filter $(BOARD), esp12e esp01 nano32 nodemcu esp32_devkitc))
+ifeq ($(BOARD),$(filter $(BOARD), esp12e esp01 B52A B52B nano32 nodemcu esp32_devkitc))
 MICROPYTHON_SRC += \
 	lib/libm/acoshf.c \
 	lib/libm/asinfacosf.c \
