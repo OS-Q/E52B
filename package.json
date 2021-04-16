@@ -1,10 +1,13 @@
 {
-  "name":"E52B",
-  "description":"Pumbaa OS",
-  "url":"https://github.com/eerimoq/pumbaa",
-  "version":"1.0.0",
+  "name": "framework-pumbaa",
+  "version": "3.0.3",
+  "description": "Pumbaa Framework - a port of MicroPython, designed for embedded devices with limited amount of RAM and code memory",
+  "keywords": [
+    "framework"
+  ],
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OS-Q/E52B.git"
+    "url": "https://github.com/eerimoq/pumbaa"
   }
 }

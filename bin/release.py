@@ -25,13 +25,13 @@ PACKAGE_ESP32_RELEASE_ENTRY_FMT = """
     "help": {{
         "online": "https://pumbaa.readthedocs.org"
     }},
-    "url": "https://github.com/OS-Q/E52B/raw/master/arduino/esp32/pumbaa-arduino-esp32-{version}.zip",
+    "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/arduino/esp32/pumbaa-arduino-esp32-{version}.zip",
     "archiveFileName": "pumbaa-arduino-esp32-{version}.zip",
     "checksum": "SHA-256:{sha256sum}",
     "size": "{size}",
     "boards": [
         {{"name" : "Nano32"}},
-        {{"name" : "ESP32"}}
+        {{"name" : "ESP32-DevKitC"}}
     ],
     "toolsDependencies": [
         {{
@@ -42,6 +42,35 @@ PACKAGE_ESP32_RELEASE_ENTRY_FMT = """
     ]
 }}"""
 
+PACKAGE_SAM_RELEASE_ENTRY_FMT = """
+{{
+  "name": "Pumbaa",
+  "architecture": "sam",
+  "version": "{version}",
+  "category": "Pumbaa",
+  "help": {{
+    "online": "https://pumbaa.readthedocs.org"
+  }},
+  "url": "https://github.com/eerimoq/pumbaa-releases/raw/master/arduino/sam/pumbaa-arduino-sam-{version}.zip",
+  "archiveFileName": "pumbaa-arduino-sam-{version}.zip",
+  "checksum": "SHA-256:{sha256sum}",
+  "size": "{size}",
+  "boards": [
+      {{"name" : "Arduino Due"}}
+  ],
+  "toolsDependencies": [
+    {{
+      "packager": "arduino",
+      "name": "arm-none-eabi-gcc",
+      "version": "4.8.3-2014q1"
+    }},
+    {{
+      "packager": "arduino",
+      "name": "bossac",
+      "version": "1.6.1-arduino"
+    }}
+  ]
+}}"""
 
 PACKAGE_RELEASE_ENTRY_FMTS = {
     'esp32': PACKAGE_ESP32_RELEASE_ENTRY_FMT,
@@ -95,7 +124,7 @@ def generate_arduino():
 
     subprocess.check_call(command)
 
-
+    
 def git_check_no_modified_files():
     """Make sure that there are no modified files.
 
@@ -177,7 +206,7 @@ def package(version):
     """Create the release artifacts for Arduino IDE and PlatformIO.
 
     """
-
+    
     git_clean_dfx()
     try:
         git_check_no_modified_files()
@@ -185,7 +214,7 @@ def package(version):
         print('Modified files under version control are not allowed '
               'when creating a release.')
         sys.exit(1)
-
+    
     # Create the PlatformIO package.
     package_name = version + '.zip'
     command = [
@@ -200,18 +229,18 @@ def package(version):
     with open(package_name, 'rb') as f:
         sha1sum = hashlib.sha1(f.read()).hexdigest()
     print('sha1sum of {} is {}:'.format(package_name, sha1sum))
-
+    
     # Add the release to the PlatformIO manifest.
     manifest_name = 'make/platformio/manifest.json'
     with open(manifest_name) as f:
         data = json.load(f, object_pairs_hook=OrderedDict)
 
     release_entry = OrderedDict([
-        ('url', 'https://github.com/OS-Q/E52B/raw/master/platformio/{}.zip'.format(version)),
+        ('url', 'https://github.com/eerimoq/pumbaa-releases/raw/master/platformio/{}.zip'.format(version)),
         ('sha1', sha1sum),
         ('version', version)
     ])
-    data['E52B'].insert(0, release_entry)
+    data['framework-pumbaa'].insert(0, release_entry)
 
     with open(manifest_name, 'w') as f:
         f.write(json.dumps(data, indent=4, separators=(',', ': ')))
@@ -248,20 +277,20 @@ def package(version):
             sha256sum=sha256sum,
             size=os.stat(package_name).st_size)
         release_entry = json.loads(release_entry_formatted, object_pairs_hook=OrderedDict)
-
+    
         # Insert the release entry into the manifest.
         with open(manifest_name) as f:
             data = json.load(f, object_pairs_hook=OrderedDict)
 
         data['packages'][0]['platforms'].append(release_entry)
-
+    
         with open(manifest_name, 'w') as f:
             f.write(json.dumps(data, indent=4, separators=(',', ': ')))
 
         shutil.copy(package_name, '../pumbaa-releases/arduino/' + family)
         shutil.copy(manifest_name, '../pumbaa-releases/arduino/' + family)
 
-
+    
 def main():
     """Main function.
 

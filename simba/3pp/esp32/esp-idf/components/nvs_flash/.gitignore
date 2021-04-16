@@ -1,7 +1,0 @@
-test/test_nvs
-test/coverage
-test/coverage.info
-*.gcno
-*.gcda
-*.gcov
-*.o
