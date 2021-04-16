@@ -91,7 +91,7 @@ PUMBAA_SRC += \
 	module_drivers/class_sd.c
 endif
 
-ifeq ($(BOARD),$(filter $(BOARD), esp12e esp01 nodemcu))
+ifeq ($(BOARD),$(filter $(BOARD), B51A B51B esp12e esp01 nodemcu))
 PUMBAA_SRC += \
 	mcus/esp8266/gccollect.c \
 	mcus/esp8266/gchelper.S \
@@ -100,7 +100,7 @@ PUMBAA_SRC += \
 	module_drivers/class_esp_wifi.c
 endif
 
-ifeq ($(BOARD),$(filter $(BOARD), B52A B52B nano32 esp32_devkitc))
+ifeq ($(BOARD),$(filter $(BOARD), B52A B52B nano32))
 PUMBAA_SRC += \
 	mcus/esp32/gccollect.c \
 	module_drivers/class_adc.c \
@@ -232,7 +232,7 @@ MICROPYTHON_SRC += \
 	py/vstr.c \
 	py/warning.c
 
-ifeq ($(BOARD),$(filter $(BOARD), esp12e esp01 B52A B52B nano32 nodemcu esp32_devkitc))
+ifeq ($(BOARD),$(filter $(BOARD), esp12e esp01 B51A B51B B52A B52B nano32 nodemcu))
 MICROPYTHON_SRC += \
 	lib/libm/acoshf.c \
 	lib/libm/asinfacosf.c \

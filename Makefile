@@ -40,6 +40,11 @@ TESTS = \
 	tst/all
 endif
 
+ifeq ($(BOARD), B51A)
+TESTS = \
+	tst/kernel/timer
+endif
+
 ifeq ($(BOARD), nodemcu)
 TESTS = \
 	tst/kernel/timer
@@ -51,6 +56,10 @@ TESTS = \
 endif
 
 ifeq ($(BOARD), B52A)
+TESTS = \
+	tst/all
+endif
+ifeq ($(BOARD), B52B)
 TESTS = \
 	tst/all
 endif
@@ -109,18 +118,11 @@ release-test:
 release:
 	+bin/release.py --package --version $(PUMBAA_VERSION)
 
-clean-arduino-due:
-	$(MAKE) BOARD=arduino_due SERIAL_PORT=/dev/simba-arduino_due clean
-
 clean-nodemcu:
 	$(MAKE) BOARD=nodemcu SERIAL_PORT=/dev/simba-nodemcuv3 clean
 
 clean-nano32:
 	$(MAKE) BOARD=nano32 SERIAL_PORT=/dev/simba-nano32 clean
-
-test-arduino-due:
-	@echo "Arduino Due"
-	$(MAKE) BOARD=arduino_due SERIAL_PORT=/dev/simba-arduino_due test
 
 test-nodemcu:
 	@echo "NodeMCU"
@@ -150,11 +152,6 @@ $(TESTS:%=%.clean):
 
 $(TESTS:%=%.ccc):
 	$(MAKE) -C $(basename $@) codecov-coverage
-
-docs:
-	+bin/dbgen.py > database.json
-	+bin/docgen.py database.json
-	$(MAKE) -C docs sphinx
 
 tags:
 	echo "Creating tags file .TAGS"
